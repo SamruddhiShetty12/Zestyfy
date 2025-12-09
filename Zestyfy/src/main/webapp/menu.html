@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Menu</title>
+<meta charset="UTF-8">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.desc {
+    font-size: 13px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.rating {
+    background: green;
+    color: white;
+    display: inline-block;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.price {
+    font-weight: bold;
+    margin: 6px 0;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: orange;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkorange;
+}
+</style>
+</head>
+<body>
+
+<h2>🍴 Food Menu</h2>
+
+<div class="menu-container">
+
+    <!-- ITEM 1 -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Dosa.jpg">
+        <div class="card-content">
+            <h3>Masala Dosa</h3>
+            <span class="rating">4.5 ★</span>
+            <p class="desc">Crispy dosa with potato filling</p>
+            <p class="price">₹80</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg">
+        <div class="card-content">
+            <h3>Pizza</h3>
+            <span class="rating">4.3 ★</span>
+            <p class="desc">Loaded cheese pizza</p>
+            <p class="price">₹199</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg">
+        <div class="card-content">
+            <h3>Burger</h3>
+            <span class="rating">4.2 ★</span>
+            <p class="desc">Juicy double patty burger</p>
+            <p class="price">₹149</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Chicken_Biryani.jpg">
+        <div class="card-content">
+            <h3>Biryani</h3>
+            <span class="rating">4.6 ★</span>
+            <p class="desc">Hyderabadi Dum Biryani</p>
+            <p class="price">₹220</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ITEM 5 -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Chinese_noodles.jpg">
+        <div class="card-content">
+            <h3>Noodles</h3>
+            <span class="rating">4.1 ★</span>
+            <p class="desc">Spicy Chinese noodles</p>
+            <p class="price">₹120</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ITEM 6 -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Ice_cream_dessert.jpg">
+        <div class="card-content">
+            <h3>Ice Cream</h3>
+            <span class="rating">4.4 ★</span>
+            <p class="desc">Vanilla Sundae</p>
+            <p class="price">₹90</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ITEM 7 -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Paneer_Butter_Masala.jpg">
+        <div class="card-content">
+            <h3>Paneer Butter Masala</h3>
+            <span class="rating">4.7 ★</span>
+            <p class="desc">Creamy North Indian curry</p>
+            <p class="price">₹180</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ITEM 8 -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Club_sandwich.png">
+        <div class="card-content">
+            <h3>Sandwich</h3>
+            <span class="rating">4.0 ★</span>
+            <p class="desc">Grilled club sandwich</p>
+            <p class="price">₹110</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ITEM 9 -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Chocolate_cake.jpg">
+        <div class="card-content">
+            <h3>Chocolate Cake</h3>
+            <span class="rating">4.3 ★</span>
+            <p class="desc">Moist chocolate cake</p>
+            <p class="price">₹130</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ITEM 10 -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG">
+        <div class="card-content">
+            <h3>Coffee</h3>
+            <span class="rating">4.5 ★</span>
+            <p class="desc">Hot brewed coffee</p>
+            <p class="price">₹60</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
